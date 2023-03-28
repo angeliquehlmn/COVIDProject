@@ -29,7 +29,7 @@
   WHERE location LIKE '%states%'
   ORDER BY 1,2
 
-  --Looking at Cpuntries with Highest Infection Rate compared to Population
+  --Looking at Countries with Highest Infection Rate compared to Population
   
   SELECT Location,Population, MAX(total_cases) AS HighestInfectionCount, MAX((total_cases/Population))*100 AS InfectedPecentage
   FROM [Portfolio Project]..CovidDeaths
